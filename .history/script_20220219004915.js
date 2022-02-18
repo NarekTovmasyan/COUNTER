@@ -39,7 +39,7 @@ function Constructor() {
         return count--;
     }
     this.reset = function() {
-        return count = 0;
+        return count;
     }
 }
 

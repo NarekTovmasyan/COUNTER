@@ -10,19 +10,22 @@ const plyus = document.querySelector(".plyus");
 const equals = document.querySelector(".equals");
 const fibonLeft = document.querySelector(".fibonLeft");
 const fibonRight = document.querySelector(".fibonRight");
-const count = new Constructor();
+
+
 
 leftButton.addEventListener("click", function minus() {
-    num.innerHTML = count.up();
+
+    num.innerHTML = i;
 });
 
 rightButton.addEventListener("click", function pulus() {
-    num.innerHTML = count.down();
+
+    num.innerHTML = i;
 });
 
 centerButton.addEventListener("click", function reset() {
     i = 0;
-    num.innerHTML = count.reset();
+    num.innerHTML = i;
     inputNum1.value = "";
     plyus.innerText = "";
     inputNum2.value = "";
@@ -30,16 +33,13 @@ centerButton.addEventListener("click", function reset() {
     valueOfSum.innerText = "";
 });
 
-function Constructor() {
+function Construcktor() {
     let count = 0;
     this.up = function() {
         return count++;
     }
     this.down = function() {
         return count--;
-    }
-    this.reset = function() {
-        return count = 0;
     }
 }
 

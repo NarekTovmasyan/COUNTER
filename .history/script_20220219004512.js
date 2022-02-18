@@ -17,12 +17,13 @@ leftButton.addEventListener("click", function minus() {
 });
 
 rightButton.addEventListener("click", function pulus() {
+
     num.innerHTML = count.down();
 });
 
 centerButton.addEventListener("click", function reset() {
     i = 0;
-    num.innerHTML = count.reset();
+    num.innerHTML = i;
     inputNum1.value = "";
     plyus.innerText = "";
     inputNum2.value = "";
@@ -37,9 +38,6 @@ function Constructor() {
     }
     this.down = function() {
         return count--;
-    }
-    this.reset = function() {
-        return count = 0;
     }
 }
 

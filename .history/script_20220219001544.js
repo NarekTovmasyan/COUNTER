@@ -10,38 +10,28 @@ const plyus = document.querySelector(".plyus");
 const equals = document.querySelector(".equals");
 const fibonLeft = document.querySelector(".fibonLeft");
 const fibonRight = document.querySelector(".fibonRight");
-const count = new Constructor();
 
+
+let i = 0;
 leftButton.addEventListener("click", function minus() {
-    num.innerHTML = count.up();
+    i--;
+    num.innerHTML = i;
 });
 
 rightButton.addEventListener("click", function pulus() {
-    num.innerHTML = count.down();
+    i++;
+    num.innerHTML = i;
 });
 
 centerButton.addEventListener("click", function reset() {
     i = 0;
-    num.innerHTML = count.reset();
+    num.innerHTML = i;
     inputNum1.value = "";
     plyus.innerText = "";
     inputNum2.value = "";
     equals.innerText = "";
     valueOfSum.innerText = "";
 });
-
-function Constructor() {
-    let count = 0;
-    this.up = function() {
-        return count++;
-    }
-    this.down = function() {
-        return count--;
-    }
-    this.reset = function() {
-        return count = 0;
-    }
-}
 
 function add(a) {
     return function name(b) {
